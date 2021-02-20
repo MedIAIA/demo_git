@@ -1,0 +1,39 @@
+git config --global user.name " momm"          # pour configuration
+git config --global user.email "mail@gmail.com"
+
+
+#*******************************************************************
+
+
+
+git mv "old name file" "new name file" #renomer ou bien deplacer un fichiers
+git rm "namefile"  # suprimer un  fichier
+
+
+#******************************************************************
+
+git init  #initialitatuon du ficher git du projet 
+
+git add  "namefile"   # ajouter fichier au repertoire de travail git avant de commit"
+
+git add --all *    #ajouter tous les fichiers d'un seul coup 
+
+git commit -m " message de discreption du commit "
+
+git commit -a -m "essage de discreption du commit" # add et commit en une seul commande
+
+git log # voir historique des commuit 
+
+git status # voir l'etates des depots 
+
+git diff  # commparter deux commits 
+
+git clone htttps;//<le lien_vers_depot>
+
+git pull # update the git project
+
+git push origin master # forwording the git project with the last update all in the main branch (master)
+
+
+
+

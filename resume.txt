@@ -1,4 +1,6 @@
-git config --global user.name " momm"          # for configuration
+
+*********************************  configuration  ***********************************
+git config --global user.name " momm"
 git config --global user.email "mail@gmail.com"
 
 

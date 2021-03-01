@@ -1,4 +1,4 @@
-git config --global user.name " momm"          # pour configuration
+git config --global user.name " momm"          # for configuration
 git config --global user.email "mail@gmail.com"
 
 
@@ -6,34 +6,52 @@ git config --global user.email "mail@gmail.com"
 
 
 
-git mv "old name file" "new name file" #renomer ou bien deplacer un fichiers
-git rm "namefile"  # suprimer un  fichier
+git mv "old name file" "new name file" #rename or move a file
+git rm "namefile"  # delete a file
 
 
-#******************************************************************
+#************************ prepartion du commit ******************************************
 
-git init  #initialitatuon du ficher git du projet 
+git init  #initialitatuon the  git file of the project
 
-git add  "namefile"   # ajouter fichier au repertoire de travail git avant de commit"
+git add  "namefile"   # add a file to the git working directry before committing
 
-git add --all *    #ajouter tous les fichiers d'un seul coup 
+git add --all *    # add all files to the git working directory before committing
+
+#********************************  commit ***************************************
 
 git commit -m " message de discreption du commit "
 
-git commit -a -m "essage de discreption du commit" # add et commit en une seul commande
+git commit -a -m "message de discreption du commit" # add and  commit in one command
 
-git log # voir historique des commuit 
+git log # see the the history of the commits
 
-git status # voir l'etates des depots 
+git status # check the state of repository
 
-git diff  # commparter deux commits 
+git diff <commit1> <commit2> # compare between two commits
 
 git clone htttps;//<le lien_vers_depot>
 
+****************************************** up and down project *************************************************
+
 git pull # update the git project
+
+git remote add origin https://    # add a new remote for this pojerct from the master branch
 
 git push origin master # forwording the git project with the last update all in the main branch (master)
 
+******************************************** correction of commit *******************************************
+git reset --hard HEAD  # going back to to HEAD
+git reset --hard HEAD^  # going back to the commit before HEAD
+git reset --hard HEAD~1  # equivalant to "^"
+git  reset --hard HEAD~2 #going back tow commit before HEAD
+git revert <ID_commit>
 
 
+**************************************************  branch **********************************************
+git branch # return the branchs
+git branch  <name_of_branch>  # created the branch
+git checkout <name_branch>  # switched to the name_branch
+git merge <name_branch> # merge with the master branch
+git branch -d <name_branch>  # delete the name_branch
 
